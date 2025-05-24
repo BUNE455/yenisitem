@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fotoğraf Galerim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📁 G4MP_KAAN</h1>
+  </header>
+
+  <main>
+    <section id="counters" class="counters">
+      <div class="counter" id="okulKapanmaSayaci">
+        <h2>Okulun Kapanmasına Kalan Süre</h2>
+        <div class="time" id="okulKapanmaTime">Yükleniyor...</div>
+      </div>
+      <div class="counter" id="yksSayaci">
+        <h2>YKS'ye Kalan Süre</h2>
+        <div class="time" id="yksTime">Yükleniyor...</div>
+      </div>
+    </section>
+
+    <section id="folders" class="folder-list">
+      <div class="folder" onclick="openFolder('12A')">
+        <img src="12A.png" alt="12A Fotoğraf" class="folder-img" />
+        <div>12/A Fotoğraf</div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery hidden"></section>
+
+    <div id="lightbox" class="lightbox hidden">
+      <button id="closeBtn" onclick="closeLightbox()">✖️ Kapat</button>
+      <img id="lightbox-img" src="" alt="Büyük Görüntü" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Hatıra</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
